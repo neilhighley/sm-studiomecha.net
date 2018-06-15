@@ -1,0 +1,8 @@
+{
+  "name": "sm-studiomecha.net",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/neilhighley/sm-studiomecha.net.git",
+  "author": "Neil Highley <neil@neilhighley.com>",
+  "license": "MIT"
+}

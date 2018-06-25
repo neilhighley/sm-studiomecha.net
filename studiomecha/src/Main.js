@@ -1,15 +1,11 @@
-const Main=()=>{
-    <main>
-    <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/apps' component={Apps}/>
-      <Route path='/contact' component={ContactUs}/>
-    </Switch>
-  </main>
+import React, { Component } from 'react'
+
+class Main extends Component{
+  render(){
+      return(
+        <div>MAIN PAGE</div>
+      )
+  }
 }
-const Apps = () => (
-    <Switch>
-      <Route exact path='/apps' component={AllApps}/>
-      <Route path='/apps/:name' component={AppViewer}/>
-    </Switch>
-  )
+
+export default Main;

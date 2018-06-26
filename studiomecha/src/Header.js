@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class Header extends Component{
     render(){
         return(
-            <div class='app-header'>
+            <div className='app-header'>
             <h1>
                Studio Mecha
             </h1>

@@ -1,0 +1,30 @@
+{
+    "apps": [{
+        "Reference": "AppOne",
+        "Name": "App one",
+        "Description": "The app calculator",
+        "WorkDescription": "Description of app one",
+        "TimeEstimate": "Approximate time to deliver",
+        "ImageThumbnail": "app1.png",
+        "Image": "app1.png"
+    },
+    {
+        "Reference": "AppTwo",
+        "Name": "App two",
+        "Description": "The BMI calc",
+        "WorkDescription": "Description of app two",
+        "TimeEstimate": "Approximate time to deliver",
+        "ImageThumbnail": "app2.png",
+        "Image": "app2.png"
+    },
+    {
+        "Reference": "AppThree",
+        "Name": "App three",
+        "Description": "The Soiler",
+        "WorkDescription": "Description of app three",
+        "TimeEstimate": "Approximate time to deliver",
+        "ImageThumbnail": "app3.png",
+        "Image": "app3.png"
+    }
+   ]
+}

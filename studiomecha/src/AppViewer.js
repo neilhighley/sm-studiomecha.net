@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import AppResolver from './libs/AppResolver'
+import './App.css'
 
 class AppViewer extends Component{
     constructor(props){

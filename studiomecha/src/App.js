@@ -5,7 +5,7 @@ import Header from './Header'
 class App extends Component{
   render(){
     return(
-      <div>
+      <div style={{display:'flex',alignContent:'center',alignItems:'center',flexDirection: 'column'}}>
         <Header/>
         <AppRoute/>
       </div>

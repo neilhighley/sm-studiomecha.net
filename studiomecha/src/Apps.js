@@ -8,6 +8,7 @@ class Apps extends Component{
    render(){
      return(<BrowserRouter>
           <Switch>
+          <Route exact path='/' component={AllApps}/>
             <Route exact path='/apps' component={AllApps}/>
             <Route path='/apps/:id' component={AppViewer}/>
           </Switch>

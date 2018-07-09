@@ -10,8 +10,8 @@ body {
   display:flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-top:0px;
+  padding-bottom:0.5px;
 
 }
 .appHeader h1,.appHeader h2{

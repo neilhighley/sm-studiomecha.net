@@ -1,0 +1,12 @@
+.appFooter{
+    flex:1;
+    display:flex;
+ flex-direction: row;
+
+
+}
+.appFooter p{
+    margin-right:5px;
+    background-color:black;
+    border-radius:5px;
+}

@@ -5,6 +5,15 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 const images = require.context('../public/images', true);
 
 class AllApps extends Component{
+    constructor(props){
+        super(props)
+        if(this.props.apps===undefined){
+            console.log("No apps passed into allapps");
+            console.log(this.props);
+        }else{
+            console.log(this.props.apps);
+        }
+    }
 
     carouselItem(itemid,title){
         return(
@@ -16,7 +25,12 @@ class AllApps extends Component{
         )
     }
     carouselItems(){
+        //,carouselItems:this.props.apps.map(m=>this.carouselItem(m.Id,m.Name))
+        console.log({apps:this.props.apps,
+          //  carouselItems:this.props.apps.map(m=>this.carouselItem(m.Id,m.Name))
+        });
         return(
+           
             [this.carouselItem(1,'app1'),
             this.carouselItem(2,'app2'),
             this.carouselItem(3,'app3'),

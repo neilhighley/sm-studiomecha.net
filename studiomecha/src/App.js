@@ -6,7 +6,7 @@ import Intro from './Intro'
 import Outro from './Outro'
 
 import AppResolver from './libs/AppResolver'
-import './backgrounds.css'
+import './styles/backgrounds.css'
 class App extends Component{
   render(){
     let AR=new AppResolver();

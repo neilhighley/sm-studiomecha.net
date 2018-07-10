@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './SMApp.css';
+import './styles/SMApp.css';
 
 class Main2 extends Component {
   render() {

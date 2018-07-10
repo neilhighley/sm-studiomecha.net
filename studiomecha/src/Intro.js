@@ -7,7 +7,7 @@ class Intro extends Component{
         <div className="intro">
            
            <div className="introPanel introBox1">
-            <img src="./images/app1.png" width="100%" alt="intro item"/>
+            <img src="./images/app1.png" alt="intro item"/>
             <p> Some text about this image should be displayed.  Some text about this image should be displayed.
                   Some text about this image should be displayed.  Some text about this image should be displayed.
                     Some text about this image should be displayed.  Some text about this image should be displayed.
@@ -17,7 +17,7 @@ class Intro extends Component{
 
            </div>
            <div className="introPanel introBox2">
-           <img src="./images/app2.png" width="100%"  alt="intro item"/>
+           <img src="./images/app2.png" alt="intro item"/>
             <p> Some text about this image should be displayed.  Some text about this image should be displayed.
                   Some text about this image should be displayed.  Some text about this image should be displayed.
                     Some text about this image should be displayed.  Some text about this image should be displayed.

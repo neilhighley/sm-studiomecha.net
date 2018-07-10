@@ -8,31 +8,35 @@ class Footer extends Component{
         return(
             <div className="appFooter">
                 <div className="footerPanels" >
-                    <p>
                         <ul>
                         <li>Some stuff</li>
                         <li>Some stuff</li>
                         <li>Some stuff</li>
                         </ul>    
-                    </p>
-                    <p>
                     <ul>
                         <li>Some stuff</li>
                         <li>Some stuff</li>
                         <li>Some stuff</li>
                         </ul>
-                    </p>
-                    <p>
                     <ul>
                         <li>Some stuff</li>
                         <li>Some stuff</li>
                         <li>Some stuff</li>
                         </ul>
-                    </p>
                     <p><TwitterLink/>
                     <EmailLink/></p>
                 </div>
-                <div className="copyright">&copy; studiomecha 2018 <EmailLink type="text"/></div>
+                <div className="base">
+                 <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
+                </div>
             </div>
         )
     }

@@ -15,7 +15,6 @@
     flex-flow: column;
     justify-content: flex-start;
     flex-direction: row;
-    color:#B6C648;
     font-size:0.8em;
     padding:0px;
     margin:0px;
@@ -33,20 +32,13 @@
 .footerPanels li{
     padding:0px;
     margin:0px;
+
 }
 .footerPanels p{
     margin-right:5px;
 }
-
-.appFooter .base{
-    width:100%;
-    height:1.2em;
-    background-color:#2C4251;
-    font-size:0.6em;
-    overflow:hidden;    
-}
-.appFooter .baseContent{
-    display:inline-flex;
-    width: 200px;
-    color:#C1C1C1;
+.footerPanels a{
+    text-decoration:none;
+    color:#B6C648;
+    text-transform: lowercase;
 }

@@ -25,10 +25,6 @@ class AllApps extends Component{
         )
     }
     carouselItems(){
-        //,carouselItems:this.props.apps.map(m=>this.carouselItem(m.Id,m.Name))
-        console.log({apps:this.props.apps,
-          //  carouselItems:this.props.apps.map(m=>this.carouselItem(m.Id,m.Name))
-        });
         return(
            
             [this.carouselItem(1,'app1'),

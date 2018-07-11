@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AppRoute from './AppRoute'
 import Header from './Header'
 import Footer from './Footer'
-import Intro from './Intro'
 import Outro from './Outro'
 
 import AppResolver from './libs/AppResolver'
@@ -14,7 +13,6 @@ class App extends Component{
     return(
       <div style={style} className='yellowGrid'>
         <Header/>
-        <Intro/>
         <AppRoute apps={allApps}/>
         <Outro/>
         <Footer/>

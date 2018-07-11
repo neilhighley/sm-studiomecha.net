@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import TwitterLink from './TwitterLink'
 import EmailLink from './EmailLink.js'
+import CopyrightStrip from './CopyrightStrip'
 import './styles/footer.css'
 
 class Footer extends Component{
@@ -26,17 +27,7 @@ class Footer extends Component{
                     <p><TwitterLink/>
                     <EmailLink/></p>
                 </div>
-                <div className="base">
-                 <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                    <span className="baseContent">&copy; STUDIOMECHA 2018 </span>
-                </div>
+                <CopyrightStrip/>
             </div>
         )
     }

@@ -2,21 +2,32 @@ import React,{Component} from 'react'
 import PropTypes from 'prop-types';
 
 class CopyrightStrip extends Component{
+    Styles={
+        container:{              
+            height:"1.2em",
+            backgroundColor:"#2C4251",
+            fontSize:"0.6em",
+        },
+        copyrightitem:{
+            display:'inline-block',
+            width: "200px",
+        }}
+
     render(){
-        Styles.copyrightitem.color=this.props.Color
+        
         return(
-            <div style={{overflow:"hidden",width:"100%",display:'flex'}}>
-            <div style={Styles.container}>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
-                 <span style={Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+            <div style={{overflow:"hidden",width:"100%",display:'flex',color:this.props.Color}}>
+            <div style={this.Styles.container}>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
+                 <span style={this.Styles.copyrightitem}>&copy; {this.props.CopyrightText} </span>
                  
                  
                 </div>
@@ -34,16 +45,5 @@ CopyrightStrip.propTypes={
     Color:PropTypes.string
 }
 
-const Styles={
-    container:{              
-        height:"1.2em",
-        backgroundColor:"#2C4251",
-        fontSize:"0.6em",
-    },
-    copyrightitem:{
-        display:'inline-block',
-        width: "200px",
-    }
-}
 
 export default CopyrightStrip

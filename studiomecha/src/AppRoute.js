@@ -1,10 +1,13 @@
 import React,{Component} from 'react'
-import {Switch,BrowserRouter,Route} from 'react-router-dom'
-import Apps from './Apps'
+import {Switch,Route,BrowserRouter} from 'react-router-dom'
+//import Apps from './Apps'
 import ContactUs from './ContactUs'
 import Augmented from './Augmented'
 import Virtual from './Virtual'
 import Home from './Home'
+import AllApps from './AllApps'
+import AppViewer from './AppViewer'
+
 
 class AppRoute extends Component{
     constructor(props){
@@ -16,9 +19,10 @@ class AppRoute extends Component{
         return(
             <BrowserRouter>
                 <Switch>
-                    <Route exact path='/' component={Apps} params={this.props.apps}/>
+                    <Route exact path='/' component={AllApps} params={this.props.apps}/>
                     <Route path='/home' component={Home} params={this.props.apps}/>
-                    <Route path='/apps' component={Apps} params={this.props.apps}/>
+                    <Route exact path='/apps' component={AllApps}  {...this.props.apps}/>
+                    <Route path='/apps/:id' component={AppViewer} {...this.props.apps}/> 
                     <Route exact path='/contactus' component={ContactUs} params={this.props.apps}/>
                     <Route exact path='/augmented' component={Augmented} params={this.props.apps}/>
                     <Route exact path='/virtual' component={Virtual} params={this.props.apps}/>

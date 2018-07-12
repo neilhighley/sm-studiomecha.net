@@ -20,12 +20,13 @@ export default Header
 const style={
     main:{
         width:'100%',
-        alignContents:'flex-start'
+        alignContents:'flex-start',
+        textTransform:'uppercase',
     },
     headerMain:{
 
     },
     headerSub:{
-
+        
     }
   }

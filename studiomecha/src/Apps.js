@@ -6,13 +6,14 @@ import AppViewer from './AppViewer'
 class Apps extends Component{
 
    render(){
-     return(<BrowserRouter>
-          <Switch>
-            <Route exact path='/' component={AllApps} {...this.props.apps}/>
-            <Route exact path='/apps' component={AllApps}  {...this.props.apps}/>
-            <Route path='/apps/:id' component={AppViewer} {...this.props.apps}/> 
-          </Switch>
-          </BrowserRouter>
+     return(
+          <div>All apps</div>
+          // <BrowserRouter>
+          // <Switch>
+          //   <Route exact path='/' component={AllApps} {...this.props.apps}/>
+           
+          // </Switch>
+          // </BrowserRouter>
           )
         }; 
       }

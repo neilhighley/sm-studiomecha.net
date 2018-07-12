@@ -2,23 +2,14 @@ import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './styles/AllApps.css'
 const images = require.context('../public/images', true);
 
 class AllApps extends Component{
-    constructor(props){
-        super(props)
-        if(this.props.apps===undefined){
-            console.log("No apps passed into allapps");
-            console.log(this.props);
-        }else{
-            console.log(this.props.apps);
-        }
-    }
-
     carouselItem(itemid,title){
         return(
-            <div key={itemid}>
-                <img alt={'item'+itemid} src={images('./app'+itemid+'.png')}/>
+            <div  key={itemid}>
+                <img alt={'item'+itemid} style={{height:"300px"}} src={images('./app'+itemid+'.png')}/>
                 <p className={styles.legend}><Link to={'/apps/' + itemid} props={{id:itemid}}>{title}</Link></p>
                 
             </div>

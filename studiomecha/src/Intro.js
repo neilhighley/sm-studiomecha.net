@@ -7,19 +7,18 @@ class Intro extends Component{
         <div className="intro">
            
            <div className="introPanel introBox1">
-            <img src="./images/app1.png" alt="intro item"/>
+            <img src="./images/intro_1.png" alt="intro item"/>
             <div className="introContent">  
               <h1>Industrial</h1>
-              <p>Custom Measurement and Calculation tools to aid in efficiency and improved accuracy in all jobs</p>
+              <p>Whether it is construction, engineering or manufacturing, modernise your workforce with Custom Measurement and Calculation Tools to aid in efficiency and improved accuracy in all jobs.</p>
             </div>
 
            </div>
            <div className="introPanel introBox2">
-           <img src="./images/app2.png" alt="intro item"/>
+           <img src="./images/intro_2.png" alt="intro item"/>
           <div className="introContent">
              <h1>Commercial</h1>
-              <p>Create a simple app for your customers to find you, or a expense tracker for your staff</p>
-           
+              <p>Simple apps for your customers to see you, a expense tracker for your staff or great campaigns driven by a mobile presence</p>
             </div>
            </div>
         </div>)

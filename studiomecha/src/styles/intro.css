@@ -1,12 +1,12 @@
 .intro{
-    width:800px;
+    width:1010px;
     align-content: center;
     display:flex;
     flex-direction: rows;
     margin-top:5px;
 }
 .introPanel{
-   
+   width:501px;
     border-radius: 10px;
     background-color:#000;
     color:#FFF;
@@ -16,7 +16,7 @@
 .introPanel img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width:245px;
+    width:500px;
 }
 .introPanel .introContent{
     padding:0px;

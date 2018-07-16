@@ -1,3 +1,16 @@
 .autoHeightElement{
     height:500px;
 }
+.carousel a{
+    color:white;
+    font-size:1.3em;
+    text-decoration: none;
+}
+.carousel .description{
+    font-size:0.9em;
+    color:#B6C648;
+}
+.carousel .thumb{
+    height:50px;
+    width:50px;
+}

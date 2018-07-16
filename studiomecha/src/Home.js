@@ -10,7 +10,8 @@ class Home extends Component{
             uncomplicated, yet powerful applications to help your business get the most from the new digital landscape.<br/>
             There are many types of apps to help your business grow from branded measuring applications to bespoke expense tracking tools to simple store fronts that help your customers find you.<br/>
             With over twenty years in the digital industry, you can be assured that we will find the best solution for whatever you want to do with mobile. </div>
-                <Link to='/apps'>Show app examples</Link>
+            <br/>
+            <Link to='/apps'>Show app examples >>>>></Link>
             </div>
         )
     }

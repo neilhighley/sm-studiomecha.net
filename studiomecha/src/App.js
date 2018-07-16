@@ -20,12 +20,13 @@ class App extends Component{
   render(){
     let AR=new AppResolver();
     let allApps=AR.getAllApps();
+    var apps={meh:'meh'}
     return(
       <BrowserRouter>
       <div style={style} className='darkGrid fullSizePage'>
         <Header/>
         <Switch>
-                    <Route exact path='/' component={Intro} params={allApps}/>
+                    <Route exact path='/' component={Intro} params={this.allApps}/>
                     <Route path='/home' component={Intro} params={allApps}/>
                     <Route exact path='/contactus' component={Intro} params= {allApps}/>
                     {/* <Route exact path='/augmented' component={Augmented} params= {allApps}/>
@@ -35,7 +36,7 @@ class App extends Component{
                 <Switch>
                     <Route exact path='/' component={Home} params={allApps}/>
                     <Route path='/home' component={Home} params={allApps}/>
-                    <Route exact path='/apps' component={AllApps} params= {allApps}/>
+                    <Route exact path='/apps' component={AllApps} params= {{apps:1}}/>
                     <Route path='/apps/:id' component={AppViewer} params= {allApps}/> 
                     <Route exact path='/contactus' component={ContactUs} params= {allApps}/>
                     <Route exact path='/augmented' component={Augmented} params= {allApps}/>

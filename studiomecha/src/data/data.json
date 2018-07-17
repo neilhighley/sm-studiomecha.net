@@ -6,7 +6,8 @@
         "WorkDescription": "Description of app one",
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app1.png",
-        "Image": "app1.png"
+        "Image": "app1.png",
+        "Id":"1"
     },
     {
         "Reference": "AppTwo",
@@ -15,7 +16,8 @@
         "WorkDescription": "Description of app two",
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app2.png",
-        "Image": "app2.png"
+        "Image": "app2.png",
+        "Id":"2"
     },
     {
         "Reference": "AppThree",
@@ -24,7 +26,11 @@
         "WorkDescription": "Description of app three",
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app3.png",
-        "Image": "app3.png"
+        "Image": "app3.png",
+        "Id":"3"
     }
-   ]
+   ],
+   "Site":{
+    "PHONE":"0784 324 7878"
+   }
 }

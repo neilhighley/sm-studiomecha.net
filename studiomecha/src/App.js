@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Switch,Route,BrowserRouter} from 'react-router-dom'
+import {Switch, Route, BrowserRouter} from 'react-router-dom'
 import Intro from './Intro'
 import Header from './Header'
 import Outro from './Outro'
@@ -14,36 +14,36 @@ import AppViewer from './AppViewer'
 
 import AppResolver from './libs/AppResolver'
 import './styles/backgrounds.css'
+import SiteData from './libs/SiteData'
 
 
 class App extends Component{
+  
   render(){
     let AR=new AppResolver();
     let allApps=AR.getAllApps();
-    var apps={meh:'meh'}
+    let sd=new SiteData();
     return(
       <BrowserRouter>
       <div style={style} className='darkGrid fullSizePage'>
-        <Header/>
-        <Switch>
-                    <Route exact path='/' component={Intro} params={this.allApps}/>
-                    <Route path='/home' component={Intro} params={allApps}/>
-                    <Route exact path='/contactus' component={Intro} params= {allApps}/>
-                    {/* <Route exact path='/augmented' component={Augmented} params= {allApps}/>
-                    <Route exact path='/virtual' component={Virtual} params= {allApps}/> */}
+        <Header SiteData={sd}/>
+                <Switch>
+                    <Route exact path='/' component={Intro}/>
+                    <Route path='/home' component={Intro}/>
+                    <Route exact path='/contactus' component={Intro}/>
                 </Switch>
         
                 <Switch>
-                    <Route exact path='/' component={Home} params={allApps}/>
-                    <Route path='/home' component={Home} params={allApps}/>
-                    <Route exact path='/apps' component={AllApps} params= {{apps:1}}/>
-                    <Route path='/apps/:id' component={AppViewer} params= {allApps}/> 
-                    <Route exact path='/contactus' component={ContactUs} params= {allApps}/>
-                    <Route exact path='/augmented' component={Augmented} params= {allApps}/>
-                    <Route exact path='/virtual' component={Virtual} params= {allApps}/>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/home' component={Home}/>
+                    <Route exact path='/apps' render={()=><AllApps apps={allApps}/>} />
+                    <Route path='/apps/:id' render={(props)=><AppViewer {...props} apps={allApps}/>}/> 
+                    <Route exact path='/contactus' component={()=><ContactUs SiteData={sd}/>}/>
+                    <Route exact path='/augmented' component={Augmented} />
+                    <Route exact path='/virtual' component={Virtual}/>
                 </Switch>
         <Outro/>
-        <Footer/>      
+        <Footer SiteData={sd}/>      
       </div>
       </BrowserRouter>
     )

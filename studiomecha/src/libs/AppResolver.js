@@ -1,6 +1,6 @@
 
-const data = require('../data/data.json');
-
+//const data = require('../data/data.json');
+import data from "../data/data.json"
 class AppResolver{
 
     constructor(){
@@ -10,11 +10,22 @@ class AppResolver{
    getAllApps(){
        return this._apps;
    }
-
+   getAppAtPosition(pos){
+       if(pos>this._apps.length){
+           return this._apps[0]
+       }
+       return this._apps[pos]
+   }
     getApp(appId){
-        if(appId>this._apps.length-1){return this._apps[0]}
-
-        return this._apps[appId];
+        for(var i=0;i<this._apps.length;i++){
+            if(this._apps[i].Id===appId){
+                return this._apps[appId]
+            }
+        }
+        return this._apps[0]
+    }
+    refresh(){
+        this._apps=data.apps;
     }
 }
 

@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import TwitterLink from './TwitterLink'
 import EmailLink from './EmailLink.js'
 import CopyrightStrip from './CopyrightStrip'
-
+import CreditStrip from './CreditStrip'
 import {Link} from 'react-router-dom'
 
 import './styles/footer.css'
@@ -30,6 +30,7 @@ class Footer extends Component{
                     <p><TwitterLink/>
                     <EmailLink/></p>
                 </div>
+                <CreditStrip StripText="Iconography provided by <FreePik/>" Symbol='0' Color="#B1B1B1"/>
                 <CopyrightStrip/>
             </div>
             

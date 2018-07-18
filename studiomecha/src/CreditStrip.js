@@ -10,7 +10,7 @@ const StripSpan=(style,text,symbol)=>{
         }
 
 }
-class CopyrightStrip extends Component{
+class CreditStrip extends Component{
     Styles={
         container:{              
             height:"1.2em",
@@ -44,16 +44,16 @@ class CopyrightStrip extends Component{
     }
 }
 
-CopyrightStrip.defaultProps={
+CreditStrip.defaultProps={
     StripText:" STUDIOMECHA 2018",
     Color:"#C1C1C1",
     Symbol:1
 }
-CopyrightStrip.propTypes={
+CreditStrip.propTypes={
     StripText:PropTypes.string,
     Color:PropTypes.string,
     Symbol:PropTypes.number
 }
 
 
-export default CopyrightStrip
+export default CreditStrip

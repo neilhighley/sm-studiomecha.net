@@ -16,21 +16,13 @@ class Footer extends Component{
                         <li><Link to="contactus">Contact</Link></li>
                         <li><Link to='apps'>Apps</Link></li>
                         <li><Link to='home'>Home</Link></li>
-                        </ul>    
-                    <ul>
-                        <li><Link to='augmented'>AR (AugmentedReality)</Link></li>
-                        <li>Some stuff</li>
-                        <li>Some stuff</li>
-                        </ul>
-                    <ul>
-                        <li><Link to='virtual'>VR (VirtualReality)</Link></li>
-                        <li>Some stuff</li>
-                        <li>Some stuff</li>
-                        </ul>
-                    <p><TwitterLink/>
-                    <EmailLink/></p>
+                        <li><Link to='augmented'>AR (AugReality)</Link></li>
+                        <li><Link to='virtual'>VR (VirReality)</Link></li>
+                        <li><TwitterLink/></li>
+                        <li><EmailLink/></li>
+                    </ul>
                 </div>
-                <CreditStrip StripText="Iconography provided by <FreePik/>" Symbol='0' Color="#B1B1B1"/>
+                <CreditStrip StripText="Iconography provided by FreePik, visit their website for more cool icons" Symbol={0} Color="#818181" BgColor='#211'/>
                 <CopyrightStrip/>
             </div>
             

@@ -40,15 +40,28 @@ body {
 }
 .homeText{
   width:60%;
+  display:flex;
+  flex-direction: column;
   flex:1;
-  align-content:center;
-  color:white;
   background-color:rgba(0,0,0,0.5);
-  padding:10px;
-  margin-top:5px;
+
 }
-.homeText a{
-  color:#D16666;
+.homeText .homeCopy{
+  padding:10px;
+  margin-top:5px;  
+  color:white;
+  flex:1;
+}
+.homeFooter a{
+  color:white;
   text-decoration:none;
-  font-size:1.2em;
+  font-size:0.8em;
+  float:right;
+  margin-right:10px;
+}
+.homeFooter{
+  flex:1;  
+  align-items:flex-end;
+  background-color:rgba(200,96,96,0.2);
+  min-width:100%;
 }

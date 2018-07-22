@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-const images = require.context('../public/images', true);
+
 class AppItem extends Component{
 
     constructor(props){
@@ -8,7 +8,7 @@ class AppItem extends Component{
         this.state={item:item}
     }
     getImage(img){
-        return images('./'+img);
+        return {'./'+img+".png");
 
     }
     render(){

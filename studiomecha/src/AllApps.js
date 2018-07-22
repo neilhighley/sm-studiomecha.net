@@ -4,13 +4,11 @@ import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './styles/AllApps.css'
 
-const images = require.context('../public/images', true);
-
 class AllApps extends Component{
     carouselItem(itemid,title,description){
         return(
             <div className='carouselItem' key={itemid}>
-                <img alt={'item'+itemid} style={{height:"300px"}} src={images('./app'+itemid+'.png')}/>
+                <img alt={'item'+itemid} style={{height:"300px"}} src={'./images/app'+itemid+'.png')}/>
                 <div className={styles.legend}><Link to={'/apps/' + itemid} props={{id:itemid}}>{title}</Link></div>
                 <div className='description'>{description}</div>
                 <br/><br/>

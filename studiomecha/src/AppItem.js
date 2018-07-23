@@ -8,7 +8,7 @@ class AppItem extends Component{
         this.state={item:item}
     }
     getImage(img){
-        return {'./'+img+".png");
+        return './'+img+".png";
 
     }
     render(){

@@ -6,6 +6,12 @@
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHElEQVQYV2PccsLNmAEHYARJ+ljsOotNftBJAgCk6hn9fTVrHQAAAABJRU5ErkJggg==);
 }
 .darkGrid{
-    
     background:url(../images/background-1-dark.jpg);
+}
+.fullSizePage{
+    background-color:yellow;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    height:100%;
 }

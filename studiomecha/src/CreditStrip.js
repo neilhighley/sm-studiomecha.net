@@ -14,12 +14,10 @@ class CreditStrip extends Component{
     Styles={
         container:{              
             height:"1.2em",
-            //backgroundColor:"#2C4251",
             fontSize:"0.6em",
         },
         copyrightitem:{
             display:'inline-block',
-           // width: "200px",
            marginRight:"50px"
         }}
 

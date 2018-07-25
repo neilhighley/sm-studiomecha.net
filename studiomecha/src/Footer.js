@@ -4,13 +4,14 @@ import EmailLink from './EmailLink.js'
 import CopyrightStrip from './CopyrightStrip'
 import CreditStrip from './CreditStrip'
 import {Link} from 'react-router-dom'
-
+import CurrentTime from './CurrentTime'
 import './styles/footer.css'
 
 class Footer extends Component{
     render(){
         return(
             <div className="appFooter">
+                <CurrentTime/>
                 <div className="footerPanels" >
                         <ul>
                         <li><Link to="contactus">Contact</Link></li>

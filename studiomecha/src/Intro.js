@@ -5,7 +5,6 @@ class Intro extends Component{
     render(){
         return(
         <div className="intro">
-           
            <div className="introPanel introBox1">
             <img src="./images/intro_1.png" alt="intro item"/>
             <div className="introContent">  

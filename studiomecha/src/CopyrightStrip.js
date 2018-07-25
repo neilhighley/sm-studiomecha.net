@@ -13,7 +13,7 @@ const StripSpan=(style,text,symbol)=>{
 class CopyrightStrip extends Component{
     Styles={
         container:{              
-            height:"1.2em",
+            height:"1.4em",
             backgroundColor:"#2C4251",
             fontSize:"0.6em",
         },

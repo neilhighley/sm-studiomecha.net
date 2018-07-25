@@ -25,23 +25,24 @@ class App extends Component{
     let sd=new SiteData();
     return(
       <BrowserRouter>
-      <div style={style} className='darkGrid fullSizePage'>
+      <div className='darkGrid fullSizePage'>
         <Header SiteData={sd}/>
                 <Switch>
                     <Route exact path='/' component={Intro}/>
                     <Route path='/home' component={Intro}/>
                     <Route exact path='/contactus' component={Intro}/>
                 </Switch>
-        
+                <div className="siteContent">
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route path='/home' component={Home}/>
                     <Route exact path='/apps' render={()=><AllApps apps={allApps}/>} />
                     <Route path='/apps/:id' render={(props)=><AppViewer {...props} apps={allApps}/>}/> 
                     <Route exact path='/contactus' component={()=><ContactUs SiteData={sd}/>}/>
-                    <Route exact path='/augmented' component={Augmented} />
+                    <Route path='/augmented' component={Augmented} />
                     <Route exact path='/virtual' component={Virtual}/>
                 </Switch>
+                </div>
         <Outro/>
         <Footer SiteData={sd}/>      
       </div>
@@ -51,12 +52,3 @@ class App extends Component{
 }
 
 export default App;
-
-const style={
-  display:'flex',
-  alignContent:'center',
-  alignItems:'center',
-  flexDirection: 'column',
-  backgroundColor:'#C1C1C1'
-  
-}

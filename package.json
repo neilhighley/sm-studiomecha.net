@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/neilhighley/sm-studiomecha.net.git",
   "author": "Neil Highley <neil@neilhighley.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  }
 }

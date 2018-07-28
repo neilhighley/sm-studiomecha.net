@@ -1,9 +1,9 @@
 .intro{
-    width:1010px;
     align-content: center;
     display:flex;
     flex-direction: rows;
-    margin-top:5px;
+    margin-top:5px; 
+    margin-bottom:10px;
 }
 .introPanel{
    width:501px;

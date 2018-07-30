@@ -31,6 +31,10 @@ class AllApps extends Component{
                         {this.carouselItems()}
                     </Carousel>
                 </ErrorBoundary>
+                <div className="appsDescription">
+                    Above are a few selections of Apps that could help your business. 
+                    Available styled for your companies brand and at reasonable prices, they will pay for themselves in no time. 
+                </div>   
             </div>
         )
     }

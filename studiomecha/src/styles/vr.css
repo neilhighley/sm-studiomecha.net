@@ -1,0 +1,15 @@
+.vrPanel{
+    width:800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vrPanel .panelImage{
+    flex:1;
+}
+.vrPanel .panelImage img{
+}
+.vrPanel .panelContent{
+    flex:1;
+    margin:10px;
+}

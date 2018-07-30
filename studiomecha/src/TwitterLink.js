@@ -1,16 +1,21 @@
 import React,{Component} from 'react'
+import './styles/twitterlink.css'
+
 
 class TwitterLink extends Component{
     render(){
+        
         if(this.props.type==="text"){
             return(
-            
+                <div className="twitterLink">
                 <a href="twitter.com">twitter link</a>
-                
+                </div>
             )
         }else{
             return(
-                <a href="twitter.com">twitter IMAGE</a>
+                <div className="twitterLink">
+                <a href="twitter.com">[TWT]</a>
+                </div>
             )
         }
     }

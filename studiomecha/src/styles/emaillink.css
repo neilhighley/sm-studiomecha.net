@@ -1,0 +1,9 @@
+.emailLink{
+    flex:2;
+    background-color:white;
+    width:20px;
+}
+.emailLink a{
+    text-decoration:none;
+    color:black;
+}

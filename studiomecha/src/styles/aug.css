@@ -1,3 +1,15 @@
 .augPanel{
     width:800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.augPanel .panelImage{
+    flex:1;
+}
+.panelImage img{
+}
+.augPanel .panelContent{
+    flex:1;
+    margin:10px;
 }

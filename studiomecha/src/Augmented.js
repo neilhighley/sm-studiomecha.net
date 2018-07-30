@@ -5,8 +5,10 @@ class Augmented extends Component{
     render(){
         return(
             <div className="augPanel">
-                <img src="./images/aug_1.png" alt="augmented reality example"/>
-                <div>
+                <div className="panelImage">
+                    <img src="./images/aug_1.png" alt="augmented reality example"/>
+                </div>
+                <div className="panelContent">
                     <p>Augmented reality is a Three Dimensional overlay on real world scenes. Made famous in gaming terms by Pokemon Go,
                          but with a wide variety of applications, from interactively expanding the meaning of a sign or symbol in the workplace, 
                     and showing a customer what their purchase will look like in real life, <strong>Augmented reality can communicate concepts in a familiar and quick way</strong>.</p>

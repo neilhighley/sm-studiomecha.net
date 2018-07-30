@@ -1,0 +1,9 @@
+.twitterLink{
+    flex:2;
+    background-color:white;
+    width:20px;
+}
+a{
+    text-decoration:none;
+    color:red;
+}

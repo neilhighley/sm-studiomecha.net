@@ -20,13 +20,13 @@ class Footer extends Component{
                             <li><Link to='apps'>Apps</Link></li>
                             <li><Link to='augmented'>AR (Aug-Reality)</Link></li>
                             <li><Link to='virtual'>VR (Vir-Reality)</Link></li>
-                            <li><TwitterLink/></li>
-                            <li><EmailLink/></li>
                         </ul>
                         <div className="creditStrip">
                             <CreditStrip StripText="Iconography provided by FreePik, visit their website for more cool icons" Symbol={0} Color="#818181" BgColor='#211'/>
                         </div>
                     </div>
+                    <TwitterLink/>
+                    <EmailLink/>                
                 </div>
                 <CopyrightStrip/>
             </div>

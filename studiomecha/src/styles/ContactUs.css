@@ -1,3 +1,27 @@
 .contactUs{
     color:#FFF
 }
+.contactForm{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(100,110,54,0.5);
+    padding:5px;
+}
+.formElement{
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    height:1.2em;
+    margin-top:10px;
+    background-color:red;
+}
+.formElement input{
+    flex:2;
+}
+.formElement p{
+    margin:0px;
+    padding:0px;
+    line-height: 1.2em;
+    padding-right:10px;
+    flex:1;
+}

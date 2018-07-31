@@ -1,6 +1,14 @@
 import React,{Component} from 'react'
 import './styles/ContactUs.css'
 
+const SelectArea=()=>{
+    return(
+    <select>
+        <option>Stuff</option>
+        <option>Nonsense</option>
+    </select>)
+}
+
 class ContactUs extends Component{
     constructor(props){
         super(props);
@@ -8,7 +16,7 @@ class ContactUs extends Component{
             FormSenderName:''
         }
         this.onChange = this.onChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
 
     }
     handleSubmit(ev){
@@ -22,11 +30,13 @@ class ContactUs extends Component{
         return(
            
             <div className="contactUs">
-                <div className="intro">Thankyou for your consideration<br/>
-                Please fill out the form below, or call us on {this.props.SiteData.get("PHONE")}</div>
-                <form onSubmit={this.handleSubmit}>
-                <input type="text" value={this.state.FormSenderName} onChange={this.onChange}/>
-                <input type="submit" value="send"/>
+                <div className="intro">Thankyou for your consideration</div>
+                <div className="instruct">Please fill out the form below, or call us on {this.props.SiteData.get("PHONE")}</div>
+                
+                <form className="contactForm" onSubmit={this.handleSubmit}>
+                    <div className="formElement"><p>Your Name</p><input type="text" value={this.state.FormSenderName} onChange={this.onChange}/></div>
+                    <div className="formElement"><p>Area of Interest</p>{SelectArea()}</div>
+                   <div className="formElement"> <input type="submit" value="Send Message"/></div>
                 </form>
             </div>
         )

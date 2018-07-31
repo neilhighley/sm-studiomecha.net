@@ -1,11 +1,14 @@
 import React,{Component} from 'react'
 import './styles/ContactUs.css'
 
-const SelectArea=()=>{
+const SelectArea=(ch)=>{
     return(
-    <select>
-        <option>Stuff</option>
-        <option>Nonsense</option>
+    <select onChange={ch}>
+        <option value="1">Mobile Applications</option>
+        <option value="2">Augmented Reality</option>
+        <option value="3">Small Apps</option>
+        <option value="4">Virtual Reality</option>
+        <option value="5">General Enquiry</option>        
     </select>)
 }
 
@@ -13,18 +16,30 @@ class ContactUs extends Component{
     constructor(props){
         super(props);
         this.state={
-            FormSenderName:''
+            FormSenderName:'',
+            Area:'',
+            FormMessage:''
         }
-        this.onChange = this.onChange.bind(this);
+        this.onChangeFullName = this.onChangeFullName.bind(this);
+        this.onChangeMessage = this.onChangeMessage.bind(this);
+        
+        this.onChangeArea=this.onChangeArea.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
 
     }
     handleSubmit(ev){
+        console.log("Form submitted");
         console.log(ev.target);
-        return false;   
+        return true;   
     }
-    onChange(ev){
+    onChangeMessage(ev){
+        this.setState({FormMessage:ev.target.value});
+    }
+    onChangeFullName(ev){
         this.setState({FormSenderName: ev.target.value});
+    }
+    onChangeArea(ev){
+        this.setState({Area:ev.target.value});
     }
     render(){
         return(
@@ -34,8 +49,10 @@ class ContactUs extends Component{
                 <div className="instruct">Please fill out the form below, or call us on {this.props.SiteData.get("PHONE")}</div>
                 
                 <form className="contactForm" onSubmit={this.handleSubmit}>
-                    <div className="formElement"><p>Your Name</p><input type="text" value={this.state.FormSenderName} onChange={this.onChange}/></div>
-                    <div className="formElement"><p>Area of Interest</p>{SelectArea()}</div>
+                <div className="formElement"><p>Your Name</p><input type="text" value={this.state.FormSenderName} onChange={this.onChangeFullName}/></div>
+                    <div className="formElement"><p>Area of Interest</p>{SelectArea(this.onChangeArea)}</div>
+                    <div className="formElement"><p>Message</p><input type="text" value={this.state.FormMessage} onChange={this.onChangeMessage}/></div>
+                    
                    <div className="formElement"> <input type="submit" value="Send Message"/></div>
                 </form>
             </div>

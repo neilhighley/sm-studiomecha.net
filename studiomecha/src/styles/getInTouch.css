@@ -1,0 +1,23 @@
+.getInTouch{
+    display:flex;
+    flex-direction: row;
+    align-content: flex-end;
+    background-color:rgba(100,20,20,0.3);
+}
+.getInTouch, .getInTouch a{
+    width:100%;
+    color:white;
+    font-size:0.8em;
+    text-decoration:none;
+    padding:2px;
+    text-align:right;
+    padding-right:10px;
+}
+.getInTouch img{
+    height:9px;
+    margin-top:7px;
+    width:14px;
+}
+.getInTouch:hover{
+    background-color:rgba(100,20,20,0.7);
+}

@@ -22,7 +22,7 @@ class Footer extends Component{
                             <li><Link to='virtual'>VR (Vir-Reality)</Link></li>
                         </ul>
                         <div className="creditStrip">
-                            <CreditStrip StripText="Iconography provided by FreePik, visit their website for more cool icons" Symbol={0} Color="#818181" BgColor='#211'/>
+                            <CreditStrip StripURL="https://www.freepik.com/free-vector/website-icons-set_571011.htm" StripText="Iconography designed by FreePik, visit their website for more cool icons" Symbol={0} Color="#818181" BgColor='#211'/>
                         </div>
                     </div>
                     <TwitterLink/>

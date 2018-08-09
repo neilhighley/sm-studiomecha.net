@@ -7,7 +7,7 @@ class Header extends Component{
         return(
             <div className="appHeader" style={style.main} >
             <h1 style={style.headerMain}>
-               Studio Mecha
+               <a href='./'>Studio Mecha</a>
             </h1>
             <h2 style={style.headerSub}>Mighty Small Apps</h2>
             </div>

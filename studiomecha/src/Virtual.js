@@ -1,12 +1,13 @@
 import React,{Component} from 'react'
 import './styles/vr.css'
-
+import GetInTouch from './GetInTouch'
+import VRCube from './VRCube'
 class Virtual extends Component{
     render(){
         return(
             <div className="vrPanel">
                 <div className="panelImage">
-                    <img src="./images/vr_1.png" alt="augmented reality example"/>
+                    <VRCube/>
                 </div>
                 <div className="panelContent">
                     <p>
@@ -16,6 +17,7 @@ class Virtual extends Component{
                     <p>We can offer bespoke experiences to aid in Employee training or relaxation.</p>
                     <p>For more complex environments, we will work with partners to deliver the most immersive environments tailored to your business</p>
                 </div>
+                <GetInTouch/>
             </div>
         )
     }

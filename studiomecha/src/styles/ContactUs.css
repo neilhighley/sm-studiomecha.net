@@ -1,22 +1,51 @@
 .contactUs{
-    color:#FFF
+    color:#FFF;
+    background-color:#333;
+    flex:1;
+    margin:0px;
+    padding:0px;
 }
+.contactUs div{
+    line-height: 1em;
+}
+
+.contactUs .intro{
+    flex:1;
+    background-color:rgba(100,20,20,1);
+    padding:5px;
+    margin:0px;
+}
+.contactUs .instruct{
+    flex:1;
+    padding:5px;
+    background-color:rgba(100,20,20,0.2);
+    font-size:1.3em;
+}
+
 .contactForm{
     display:flex;
     flex-direction: column;
-    background-color: rgba(100,110,54,0.5);
     padding:5px;
 }
 .formElement{
     display:flex;
     flex-direction: row;
     flex:1;
-    height:1.2em;
-    margin-top:10px;
-    background-color:red;
+    margin-top:10px;   
 }
-.formElement input{
+.formElement p{
+    flex:1;
+    width:120px;    
+}
+.formElement input, .formElement select{
     flex:2;
+    line-height:1.6em;
+    font-size:1.5em;
+    
+}
+.formElement textarea{
+    line-height:1.6em;
+    font-size:1.8em;
 }
 .formElement p{
     margin:0px;

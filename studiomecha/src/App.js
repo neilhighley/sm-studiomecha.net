@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {Switch, Route, BrowserRouter} from 'react-router-dom'
 import Intro from './Intro'
 import Header from './Header'
@@ -15,7 +15,6 @@ import AppViewer from './AppViewer'
 import AppResolver from './libs/AppResolver'
 import './styles/backgrounds.css'
 import SiteData from './libs/SiteData'
-
 
 class App extends Component{
   

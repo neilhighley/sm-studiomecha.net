@@ -4,6 +4,7 @@
     align-content: flex-end;
     background-color:rgba(100,20,20,0.3);
 }
+
 .getInTouch, .getInTouch a{
     width:100%;
     color:white;
@@ -13,11 +14,12 @@
     text-align:right;
     padding-right:10px;
 }
+
 .getInTouch img{
-    height:9px;
-    margin-top:7px;
-    width:14px;
+    height:0.9em
+   
 }
+
 .getInTouch:hover{
     background-color:rgba(100,20,20,0.7);
 }

@@ -3,7 +3,7 @@ import './styles/getInTouch.css'
 
 const EmailIcon=()=>{
     return(
-        <img alt='Enveloper icon' src='./images/envel.png'/>
+        <img alt='Enveloper icon' src='./images/envelope-bgw.png'/>
     )
 }
 class GetInTouch extends Component{

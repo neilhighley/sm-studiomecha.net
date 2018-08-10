@@ -6,9 +6,24 @@ import CreditStrip from './CreditStrip'
 import {Link} from 'react-router-dom'
 import CurrentTime from './CurrentTime'
 import './styles/footer.css'
+import CreditItem from './libs/SiteTypes';
+
+const CreditsToShow=()=>{
+
+    return [
+        new CreditItem("Iconography designed by FreePik, visit their website for more cool icons",
+                                    "https://www.freepik.com/free-vector/website-icons-set_571011.htm",
+                                    "#818181"),
+        new CreditItem("Iconography designed by FreePik, visit their website for more cool icons",
+                                    "https://www.FreePik.com",
+                                    "#919191"),
+        ]    
+}
 
 class Footer extends Component{
     render(){
+        
+
         return(
             <div className="appFooter">
                 <div className="topFooter">
@@ -22,7 +37,8 @@ class Footer extends Component{
                             <li><Link to='virtual'>VR (Vir-Reality)</Link></li>
                         </ul>
                         <div className="creditStrip">
-                            <CreditStrip StripURL="https://www.freepik.com/free-vector/website-icons-set_571011.htm" StripText="Iconography designed by FreePik, visit their website for more cool icons" Symbol={0} Color="#818181" BgColor='#211'/>
+                          
+                             <CreditStrip Credits={CreditsToShow()} Color="#818181" BgColor="#211"/>
                         </div>
                     </div>
                     <TwitterLink/>

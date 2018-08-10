@@ -5,6 +5,7 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './styles/AllApps.css'
 import ErrorBoundary from './ErrorBoundary'
 import PropTypes from 'prop-types';
+import GetInTouch from './GetInTouch';
 
 class AllApps extends Component{
     carouselItem(itemid,title,description){
@@ -35,6 +36,7 @@ class AllApps extends Component{
                     Above are a few selections of Apps that could help your business. 
                     Available styled for your companies brand and at reasonable prices, they will pay for themselves in no time. 
                 </div>   
+                <GetInTouch/>
             </div>
         )
     }

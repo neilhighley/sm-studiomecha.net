@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import PropTypes from 'prop-types';
+import CreditItem from './libs/SiteTypes';
 
 const StripSpan=(style,text,url,symbol)=>{
     if(symbol===1){
@@ -18,7 +19,7 @@ const StripSpan=(style,text,url,symbol)=>{
 }
 const MultiStrip=(child,num)=>{
     var arr=[];
-    for(var i=0;i<10;i++){arr.push(child)}
+    for(var i=0;i<num;i++){arr.push(child)}
     return arr;
 }
 class CreditStrip extends Component{
@@ -31,27 +32,40 @@ class CreditStrip extends Component{
             display:'inline-block',
             marginRight:"50px"
         }}
-
-    render(){
+    GetRenderedCredits(items){
+        return items.map(item=>item.HasContent?item.Content:this.GetRenderedItem(item.Text,item.URL,item.Color))
+    }
+    GetRenderedItem(itemText,itemURL,itemColor){
         let linkStyle={...this.Styles.copyrightitem};
-        linkStyle.color=this.props.Color;
+        linkStyle.color=itemColor;
         linkStyle.textDecoration='none';
+        return(           
+            StripSpan(linkStyle,itemText,itemURL,1)
+        )
+    }
+    RenderContent(p){
+       return MultiStrip( p.Credits.length>0?
+                this.GetRenderedCredits(p.Credits)
+                :this.GetRenderedItem(p.StripText,p.StripURL,p.Color),4)
+    }
+    render(){
         return(
-            <div style={{overflow:"hidden",width:"100%",display:'flex',color:this.props.Color,backgroundColor:this.props.BgColor}}>
-                <div style={this.Styles.container}>
-                    {MultiStrip(StripSpan(linkStyle,this.props.StripText,this.props.StripURL,1),4)}
-                </div>
+        <div style={{overflow:"hidden",width:"100%",display:'flex',color:this.props.Color,backgroundColor:this.props.BgColor}}>
+            <div style={this.Styles.container}>
+                {this.RenderContent(this.props)}
             </div>
+        </div>
         )
     }
 }
 
 CreditStrip.defaultProps={
-    StripText:" STUDIOMECHA 2018",
+    StripText:" CREDIT STUDIOMECHA 2018",
     StripURL:"http://www.studiomecha.net",
     Color:"#C1C1C1",
     Symbol:1,
-    BgColor:"#000000"
+    BgColor:"#000000",
+    Credits:[]
 }
 
 CreditStrip.propTypes={
@@ -59,7 +73,7 @@ CreditStrip.propTypes={
     StripURL:PropTypes.string,    
     Color:PropTypes.string,
     BgColor:PropTypes.string,
-    
+    Credits:PropTypes.arrayOf(PropTypes.instanceOf(CreditItem)),
     Symbol:PropTypes.number
 }
 

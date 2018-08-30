@@ -2,7 +2,8 @@ import React,{Component} from 'react'
 import './styles/ContactUs.css'
 
 const SelectArea=(ch)=>{
-    let areas=["Please Select...","We might need a Mobile Application",
+    let areas=["Please Select...",
+    "We might need a Mobile Application",
     "I am interested in Augmented Reality",
     "Tell me more about Small Apps",
     "Can you help us with Training Materials",

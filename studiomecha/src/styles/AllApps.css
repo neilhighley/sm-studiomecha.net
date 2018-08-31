@@ -6,14 +6,15 @@
     font-size:1.3em;
     text-decoration: none;
 }
+
 .carousel .description{
     font-size:0.9em;
+    background-color: #2C4251;
     color:#B6C648;
+    font-size:1.5em;
+    padding:5px;
 }
-.carousel .thumb{
-    height:50px;
-    width:50px;
-}
+
 .appsDescription{
     background-color:black;
     border-radius:10;
@@ -21,4 +22,8 @@
     margin-top:10px;
     margin-bottom:10px;
     padding:5px;
+}
+.work-description{
+    color:#2C4251;
+    background-color:#B6C648;
 }

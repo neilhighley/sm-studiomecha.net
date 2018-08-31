@@ -1,7 +1,9 @@
 .twitterLink{
     flex:2;
-    background-color:white;
     width:20px;
+}
+.twitterLink img{
+    margin-left:50px;
 }
 a{
     text-decoration:none;

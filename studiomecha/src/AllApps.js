@@ -8,19 +8,19 @@ import PropTypes from 'prop-types';
 import GetInTouch from './GetInTouch';
 
 class AllApps extends Component{
-    carouselItem(itemid,title,description){
+    carouselItem(itemid,title,description,workDescription){
         return(
             <div className='carouselItem' key={itemid}>
-                <img alt={'item'+itemid} style={{height:"300px"}} src={'./images/app'+itemid+'.png'}/>
+                <img alt={description} style={{height:"40%"}} src={'./images/app'+itemid+'.png'}/>
                 <div className={styles.legend}><Link to={'/apps/' + itemid} props={{id:itemid}}>{title}</Link></div>
                 <div className='description'>{description}</div>
-                <br/><br/>
+                <div className='work-description'>{workDescription}</div>
             </div>
         )
     }
     carouselItems(){
         return(
-           this.props.apps.map(app=>this.carouselItem(app.Id,app.Title,app.Description))
+           this.props.apps.map(app=>this.carouselItem(app.Id,app.Title,app.Description,app.WorkDescription))
         )
     }
 
@@ -28,7 +28,11 @@ class AllApps extends Component{
         return(
             <div style={{maxWidth:'800px'}}>
                 <ErrorBoundary>
-                    <Carousel showArrows={true}  >
+                    <Carousel showArrows={true} 
+                    autoPlay={true} infiniteLoop={true}
+                    interval={4000} showIndicators={false}
+                    showStatus={false} thumbWidth={100}
+                    >
                         {this.carouselItems()}
                     </Carousel>
                 </ErrorBoundary>

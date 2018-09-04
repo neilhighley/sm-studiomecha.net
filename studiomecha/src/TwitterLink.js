@@ -8,13 +8,13 @@ class TwitterLink extends Component{
         if(this.props.type==="text"){
             return(
                 <div className="twitterLink">
-                <a href="twitter.com">twitter link</a>
+                <a href="http://www.twitter.com/studiomecha">twitter link</a>
                 </div>
             )
         }else{
             return(
                 <div className="twitterLink">
-                <a href="twitter.com"><img alt='twitter link' width={30} src='/images/87890-twitter-icon-50x50.png'></img></a>
+                <a href="http://www.twitter.com/studiomecha"><img alt='twitter link to @studiomecha' width={30} src='/images/87890-twitter-icon-50x50.png'></img></a>
                 </div>
             )
         }

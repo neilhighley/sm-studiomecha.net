@@ -1,8 +1,8 @@
 {
     "apps": [{
         "Reference": "AppOne",
-        "Name": "App one",
-        "Description": "The Soil Area calculator",
+        "Name": "SoilCalc",
+        "Description": "The Simple Soil Area calculator",
         "WorkDescription": "Calculates the amount of soil required for soil coverage. Uses both Metric and Imperial measures.",
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app1.png",
@@ -11,8 +11,8 @@
     },
     {
         "Reference": "AppTwo",
-        "Name": "App two",
-        "Description": "The BMI calc",
+        "Name": "BMICalc",
+        "Description": "The simple BMI calculator",
         "WorkDescription": "A quick way to check your Body Mass index, using both Metric and Imperial measures",
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app2.png",
@@ -21,7 +21,7 @@
     },
     {
         "Reference": "AppThree",
-        "Name": "App three",
+        "Name": "MechaTimer",
         "Description": "The Simple, one handed timer",
         "WorkDescription": "Allows a countdown to be created with one hand, that silently vibrates when done",
         "TimeEstimate": "Approximate time to deliver",

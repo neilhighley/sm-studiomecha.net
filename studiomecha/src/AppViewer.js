@@ -16,9 +16,8 @@ class AppViewer extends Component{
     render(){
         return(
             <div className='app-container'>
-                <h1>App Viewer</h1>
                 <AppItem data={this.state.app}/>
-                <Link to='/apps'>All Apps</Link>
+                <Link to='/apps'>&lt;&lt; Return to view of all Apps</Link>
             </div>
 
         )

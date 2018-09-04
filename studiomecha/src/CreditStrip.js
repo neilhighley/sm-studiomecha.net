@@ -2,18 +2,24 @@ import React,{Component} from 'react'
 import PropTypes from 'prop-types';
 import CreditItem from './libs/SiteTypes';
 
+
+const keyGen=()=>{
+    if(this.key===undefined)this.key=1
+        this.key=this.key+1;
+        return this.key;
+}
 const StripSpan=(style,text,url,symbol)=>{
     if(symbol===1){
         if(url!==""){
-            return(<a href={url} title={text} style={style}>&copy; {text}</a>)
+            return(<a key={keyGen()} href={url} title={text} style={style}>&copy; {text}</a>)
         }else{
-            return(<span style={style}>&copy; {text}</span>)
+            return(<span key={keyGen()} style={style}>&copy; {text}</span>)
         }
     }else{
         if(url!==""){
-            return(<a href={url} title={text} style={style}>{text}</a>)
+            return(<a key={keyGen()} href={url} title={text} style={style}>{text}</a>)
         }else{
-            return(<span style={style}>{text}</span>)
+            return(<span key={keyGen()} style={style}>{text}</span>)
         }
     }
 }
@@ -23,6 +29,7 @@ const MultiStrip=(child,num)=>{
     return arr;
 }
 class CreditStrip extends Component{
+    
     Styles={
         container:{              
             height:"1.2em",
@@ -48,10 +55,13 @@ class CreditStrip extends Component{
                 this.GetRenderedCredits(p.Credits)
                 :this.GetRenderedItem(p.StripText,p.StripURL,p.Color),4)
     }
+    UniqueKey(){
+        return keyGen();
+    }
     render(){
         return(
-        <div style={{overflow:"hidden",width:"100%",display:'flex',color:this.props.Color,backgroundColor:this.props.BgColor}}>
-            <div style={this.Styles.container}>
+        <div style={{overflow:"hidden",width:"100%",display:'flex',color:this.props.Color,backgroundColor:this.props.BgColor}} key={this.UniqueKey()}>
+            <div style={this.Styles.container} key={this.UniqueKey()}>
                 {this.RenderContent(this.props)}
             </div>
         </div>

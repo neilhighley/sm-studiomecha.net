@@ -19,7 +19,7 @@ class AppResolver{
     getApp(appId){
         for(var i=0;i<this._apps.length;i++){
             if(this._apps[i].Id===appId){
-                return this._apps[appId]
+                return this._apps[i]
             }
         }
         return this._apps[0]

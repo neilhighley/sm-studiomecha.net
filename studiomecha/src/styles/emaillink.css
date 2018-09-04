@@ -2,6 +2,7 @@
     flex:2;
     background-color:black;
     width:20px;
+    margin-top:3px;
 }
 .emailLink a{
     text-decoration:none;

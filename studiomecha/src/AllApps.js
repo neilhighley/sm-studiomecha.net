@@ -8,12 +8,17 @@ import PropTypes from 'prop-types';
 import GetInTouch from './GetInTouch';
 
 class AllApps extends Component{
+    GotoApp(id){
+        console.log("gotoapp")
+        let linkForApp='/apps/' + id;
+        this.context.router.history.push(linkForApp);
+    }
     carouselItem(itemid,title,description,workDescription){
         return(
             <div className='carouselItem' key={itemid}>
                 <img alt={description} style={{height:"40%"}} src={'./images/app'+itemid+'.png'}/>
                 <div className={styles.legend}><Link to={'/apps/' + itemid} props={{id:itemid}}>{title}</Link></div>
-                <div className='description'>{description}</div>
+                <div className='description'><Link to={'/apps/' + itemid} props={{id:itemid}}>{description}</Link></div>
                 <div className='work-description'>{workDescription}</div>
             </div>
         )

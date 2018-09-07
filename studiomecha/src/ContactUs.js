@@ -25,6 +25,7 @@ class ContactUs extends Component{
             Area:'',
             FormMessage:''
         }
+        this.formAction='https://www.briskforms.com/go/07f6b605e5794f0aa79530213049f2e6'
         this.onChangeFullName = this.onChangeFullName.bind(this);
         this.onChangeMessage = this.onChangeMessage.bind(this);
         
@@ -33,12 +34,11 @@ class ContactUs extends Component{
 
     }
     handleSubmit(ev){
-        console.log("Form submitted");
-        var obj={name:this.state.FormSenderName,
-            area:this.state.Area,
-            message:this.state.FormMessage        }
-        console.log(obj);
-       ev.preventDefault();   
+        // console.log("Form submitted");
+        // var obj={name:this.state.FormSenderName,
+        //     area:this.state.Area,
+        //     message:this.state.FormMessage        }
+       //ev.preventDefault();   
     }
     onChangeMessage(ev){
         this.setState({FormMessage:ev.target.value});
@@ -56,7 +56,7 @@ class ContactUs extends Component{
                 <div className="intro">Thankyou for your consideration</div>
                 <div className="instruct">Please fill out the form below, or call us on {this.props.SiteData.get("PHONE")}</div>
                 
-                <form className="contactForm" onSubmit={this.handleSubmit}>
+                <form className="contactForm" onSubmit={this.handleSubmit} action={this.formAction} method="POST">
                     <div className="formElement">{SelectArea(this.onChangeArea)}</div>
                     <div className="formElement"><textarea title="Don't forget to add your contact details" rows="5" cols="59" type="text" value={this.state.FormMessage} onChange={this.onChangeMessage}/></div>
                     

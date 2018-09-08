@@ -12,7 +12,7 @@ const SelectArea=(ch)=>{
     "Just a General Enquiry"
     ];
     return(
-    <select title="What is your enquiry?" onChange={ch}>
+    <select title="What is your enquiry?" name="query" onChange={ch}>
         {areas.map(e=><option key={e}>{e}</option>)}       
     </select>)
 }
@@ -34,11 +34,7 @@ class ContactUs extends Component{
 
     }
     handleSubmit(ev){
-        // console.log("Form submitted");
-        // var obj={name:this.state.FormSenderName,
-        //     area:this.state.Area,
-        //     message:this.state.FormMessage        }
-       //ev.preventDefault();   
+        return true;
     }
     onChangeMessage(ev){
         this.setState({FormMessage:ev.target.value});
@@ -53,15 +49,19 @@ class ContactUs extends Component{
         return(
            
             <div className="contactUs">
-                <div className="intro">Thankyou for your consideration</div>
-                <div className="instruct">Please fill out the form below, or call us on {this.props.SiteData.get("PHONE")}</div>
-                
-                <form className="contactForm" onSubmit={this.handleSubmit} action={this.formAction} method="POST">
-                    <div className="formElement">{SelectArea(this.onChangeArea)}</div>
-                    <div className="formElement"><textarea title="Don't forget to add your contact details" rows="5" cols="59" type="text" value={this.state.FormMessage} onChange={this.onChangeMessage}/></div>
-                    
-                   <div className="formElement"> <input type="submit" value="Send Message"/></div>
-                </form>
+                <div className="contactUsIntro">Thankyou for your consideration</div>
+                <div className="instruct">Please fill out the form below, or {this.props.SiteData.get("PHONE")}</div>
+                <div className="contactForm">
+                    <form onSubmit={this.handleSubmit} action={this.formAction} method="POST">
+                        <div className="formElement">{SelectArea(this.onChangeArea)}</div>
+                        <div className="formElement"><textarea name="request" title="Don't forget to add your contact details" rows="5" cols="59" 
+                        type="text" 
+                        value={this.state.FormMessage} 
+                        onChange={this.onChangeMessage}/></div>
+                        
+                    <div className="formElement"> <input type="submit" value="Send Message"/></div>
+                    </form>
+                </div>
             </div>
         )
     }

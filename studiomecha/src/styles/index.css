@@ -78,10 +78,12 @@ html, body {
   flex:1;  
   align-items:flex-end;
   background-color:rgba(220,200,72,0.3);
-  min-width:100%;
   align-content: center;
+  min-width:100%;
 }
 
 .siteContent{
   padding-bottom:10px;
+  display:flex;
+  flex:1;
 }

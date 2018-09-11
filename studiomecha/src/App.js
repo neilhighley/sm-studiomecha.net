@@ -15,6 +15,7 @@ import AppViewer from './AppViewer'
 import AppResolver from './libs/AppResolver'
 import './styles/backgrounds.css'
 import SiteData from './libs/SiteData'
+import VRAFrame from './VRAFrame'
 
 class App extends Component{
   
@@ -25,7 +26,7 @@ class App extends Component{
     return(
       <BrowserRouter>
       <div className='darkGrid fullSizePage'>
-        <Header SiteData={sd}/>
+                <Header SiteData={sd}/>
                 <Switch>
                     <Route exact path='/' component={Intro}/>
                     <Route path='/home' component={Intro}/>
@@ -39,7 +40,10 @@ class App extends Component{
                     <Route path='/apps/:id' render={(props)=><AppViewer {...props} apps={allApps}/>}/> 
                     <Route exact path='/contactus' component={()=><ContactUs SiteData={sd}/>}/>
                     <Route path='/augmented' component={Augmented} />
-                    <Route exact path='/virtual' component={Virtual}/>
+                    <Route exact path='/virtual' component={Virtual}/>   
+                    <Route exact path='/virtual/aframe' component={VRAFrame}/>   
+                    <Route path='/virtual/aframe/:id' render={(props)=><VRViewer {...props} apps={allApps}/>}/>   
+                                     
                 </Switch>
                 </div>
         <Outro/>

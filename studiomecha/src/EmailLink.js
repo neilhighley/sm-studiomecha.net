@@ -13,7 +13,7 @@ class EmailLink extends Component{
         }else{
             return(
                 <div className="emailLink">
-                    <Link to="contactus"><img src="/images/envelope-bgw.png" width="30" alt="email envelope"/></Link>
+                    <Link to="/contactus"><img src="/images/envelope-bgw.png" width="30" alt="email envelope"/></Link>
                 </div>
             )
         }

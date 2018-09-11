@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import './styles/vr.css'
 import GetInTouch from './GetInTouch'
 import VRCube from './VRCube'
+
 class Virtual extends Component{
     render(){
         return(

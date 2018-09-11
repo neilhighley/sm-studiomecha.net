@@ -12,7 +12,7 @@
     {
         "Reference": "AppTwo",
         "Name": "BMICalc",
-        "Description": "The simple BMI calculator",
+        "Description": "The Simple BMI calculator",
         "WorkDescription": "A quick way to check your Body Mass index, using both Metric and Imperial measures",
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app2.png",

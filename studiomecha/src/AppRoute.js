@@ -7,7 +7,7 @@ import Virtual from './Virtual'
 import Home from './Home'
 import AllApps from './AllApps'
 import AppViewer from './AppViewer'
-
+import VRAFrame from 'VRAFrame'
 
 class AppRoute extends Component{
     constructor(props){
@@ -26,6 +26,8 @@ class AppRoute extends Component{
                     <Route exact path='/contactus' component={ContactUs} params={this.props.apps}/>
                     <Route exact path='/augmented' component={Augmented} params={this.props.apps}/>
                     <Route exact path='/virtual' component={Virtual} params={this.props.apps}/>
+                    <Route exact path='/aframe' component={VRAFrame} params={this.props.apps}/>
+                    
                 </Switch>
           </BrowserRouter>
         )

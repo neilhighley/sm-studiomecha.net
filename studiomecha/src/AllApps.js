@@ -9,15 +9,14 @@ import GetInTouch from './GetInTouch';
 
 class AllApps extends Component{
     GotoApp(id){
-        console.log("gotoapp")
         let linkForApp='/apps/' + id;
         this.context.router.history.push(linkForApp);
     }
     carouselItem(itemid,title,description,workDescription){
         return(
             <div className='carouselItem' key={itemid}>
-                <img alt={description} style={{height:"40%"}} src={'./images/app'+itemid+'.png'}/>
-                <div className={styles.legend}><Link to={'/apps/' + itemid} props={{id:itemid}}>{title}</Link></div>
+                <img alt={description} src={'./images/app'+itemid+'.png'}/>
+                <div style={styles.legend}><Link to={'/apps/' + itemid} props={{id:itemid}}>{title}</Link></div>
                 <div className='description'><Link to={'/apps/' + itemid} props={{id:itemid}}>{description}</Link></div>
                 <div className='work-description'>{workDescription}</div>
             </div>
@@ -31,13 +30,12 @@ class AllApps extends Component{
 
     render(){
         return(
-            <div style={{maxWidth:'800px'}}>
+            <div>
                 <ErrorBoundary>
                     <Carousel showArrows={true} 
                     autoPlay={true} infiniteLoop={true}
                     interval={4000} showIndicators={false}
-                    showStatus={false} thumbWidth={100}
-                    >
+                    showStatus={false} thumbWidth={100}>
                         {this.carouselItems()}
                     </Carousel>
                 </ErrorBoundary>
@@ -76,5 +74,7 @@ AllApps.defaultProps={
 AllApps.propTypes={
     apps:PropTypes.array
 }
+
+
 
 export default AllApps;

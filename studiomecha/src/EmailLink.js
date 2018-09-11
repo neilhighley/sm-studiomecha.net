@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import {Link} from 'react-router-dom';
 import './styles/emaillink.css'
 
 class EmailLink extends Component{
@@ -12,7 +13,7 @@ class EmailLink extends Component{
         }else{
             return(
                 <div className="emailLink">
-                    <a href="./contactus"><img src="/images/envelope-bgw.png" width="30" alt="email envelope"/></a>
+                    <Link to="contactus"><img src="/images/envelope-bgw.png" width="30" alt="email envelope"/></Link>
                 </div>
             )
         }

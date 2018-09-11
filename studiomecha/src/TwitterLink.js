@@ -14,7 +14,7 @@ class TwitterLink extends Component{
         }else{
             return(
                 <div className="twitterLink">
-                <a href="http://www.twitter.com/studiomecha"><img alt='twitter link to @studiomecha' width={30} src='/images/87890-twitter-icon-50x50.png'></img></a>
+                <a href="http://www.twitter.com/studiomecha" target="smtwitter"><img alt='twitter link to @studiomecha' width={30} src='/images/87890-twitter-icon-50x50.png'></img></a>
                 </div>
             )
         }

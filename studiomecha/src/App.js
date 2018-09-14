@@ -16,7 +16,7 @@ import AppResolver from './libs/AppResolver'
 import './styles/backgrounds.css'
 import SiteData from './libs/SiteData'
 import VRAFrame from './VRAFrame'
-
+import VRViewer from './VRViewer'
 class App extends Component{
   
   render(){

@@ -1,0 +1,10 @@
+.aframeDiv{
+    display:block;
+    width:500px;
+    height:500px;
+    background-color:#FF0000;
+}
+.aframeDiv.p{
+    color:white;
+    font-size: 2em;
+}

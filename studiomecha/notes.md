@@ -17,6 +17,23 @@
     </a-scene>
   </body>
 </html>
+```  
+
+```
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="tree" src="/path/to/tree.dae"></a-asset-item>
+      </a-assets>
+
+      <a-entity collada-model="#tree"></a-entity>
+    </a-scene>
+  </body>
+</html>
 ```
 
 ```

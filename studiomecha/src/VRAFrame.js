@@ -1,6 +1,6 @@
-//import 'aframe';
+import 'aframe';
 //import 'aframe-particle-system-component';
-//import {Entity, Scene} from 'aframe-react';
+import {Entity, Scene} from 'aframe-react';
 import React,{Component} from 'react';
 
 class VRAFrame extends Component{

@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import AppFAQ from './AppFAQ'
 
 class AppItem extends Component{
 
@@ -6,6 +7,7 @@ class AppItem extends Component{
         super(props)
         let item=props.data;
         this.state={item:item}
+        console.log(this.state.item)
     }
     getImage(img){
         return './'+img;
@@ -19,6 +21,7 @@ class AppItem extends Component{
                 <p className='description'>{this.state.item.Description}</p>
                 <p className='workDescription'>{this.state.item.WorkDescription}</p>
                 <p className='timeEstimate'>{this.state.item.TimeEstimate}</p>
+                <p className='timeEstimate'><AppFAQ qa={this.state.item.Faq}/></p>
             </div>
         )
     }

@@ -1,18 +1,7 @@
 import React,{Component} from 'react'
 import "./styles/qa.css"
-// function FAQList(props){
-//     //console.log({"list":props.list})
-//     const listItems=()=>props.list.map((m)=>{
-//         <li><p style={{color:"white"}}>{m.question}</p>
-//         <p>{m.answer}</p>
-//         </li>})
 
-//     return( <ul>{listItems()}</ul>)
-// }
 class AppFAQ extends Component{
-    constructor(props){
-        super(props);
-    }
     render(){
         return(<div className="faqcomponent">
                 <p className="faqheader">Frequently Asked Questions</p>

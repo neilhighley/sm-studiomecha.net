@@ -15,7 +15,6 @@ import AppViewer from './AppViewer'
 import AppResolver from './libs/AppResolver'
 import './styles/backgrounds.css'
 import SiteData from './libs/SiteData'
-import VRAFrame from './VRAFrame'
 import VRViewer from './VRViewer'
 class App extends Component{
   
@@ -41,7 +40,6 @@ class App extends Component{
                     <Route exact path='/contactus' component={()=><ContactUs SiteData={sd}/>}/>
                     <Route path='/augmented' component={Augmented} />
                     <Route exact path='/virtual' component={Virtual}/>   
-                    <Route exact path='/virtual/aframe' component={VRAFrame}/>   
                     <Route path='/virtual/aframe/:id' render={(props)=><VRViewer {...props} apps={allApps}/>}/>   
                                      
                 </Switch>

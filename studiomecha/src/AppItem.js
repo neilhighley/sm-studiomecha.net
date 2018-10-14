@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import AppFAQ from './AppFAQ'
+import AppPrivacyPolicy from 'AppPrivacyPolicy'
 
 class AppItem extends Component{
 
@@ -21,7 +22,8 @@ class AppItem extends Component{
                 <p className='description'>{this.state.item.Description}</p>
                 <p className='workDescription'>{this.state.item.WorkDescription}</p>
                 <p className='timeEstimate'>{this.state.item.TimeEstimate}</p>
-                <p className='timeEstimate'><AppFAQ qa={this.state.item.Faq}/></p>
+                <p><AppPrivacyPolicy AppName={this.item.Name}/></p>
+                <p><AppFAQ qa={this.state.item.Faq}/></p>
             </div>
         )
     }

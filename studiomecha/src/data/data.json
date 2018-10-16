@@ -7,7 +7,13 @@
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app1.png",
         "Image": "app1.png",
-        "Id":"1"
+        "Id":"1",
+        "Faq":[
+            {"question":"What does this calculate?",
+                "answer":"The app calculates the amount of soil required to cover a particular area, to the specified depth"},
+            {"question":"How can it be customised?",
+                "answer":"All our apps are built on a solid appreciation that not everyones companies are the same. That is why all our apps are easily skinned to include company branding and colours. With these current apps, a specific four colour pallette has been used. This allows a quick turnaround of the application, and a parallel process of design and functionality to be implemented, meaning that apps are made twice as quickly."}
+        ]
     },
     {
         "Reference": "AppTwo",
@@ -17,7 +23,13 @@
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app2.png",
         "Image": "app2.png",
-        "Id":"2"
+        "Id":"2",
+        "Faq":[
+            {"question":"What does this calculate?",
+                "answer":"The app calculates the Body Mass Index, based on values added via the two sliders"},
+            {"question":"How can it be customised?",
+                "answer":"All our apps are built on a solid appreciation that not everyones companies are the same. That is why all our apps are easily skinned to include company branding and colours. With these current apps, a specific four colour pallette has been used. This allows a quick turnaround of the application, and a parallel process of design and functionality to be implemented, meaning that apps are made twice as quickly."}
+        ]
     },
     {
         "Reference": "AppThree",
@@ -27,7 +39,13 @@
         "TimeEstimate": "Approximate time to deliver",
         "ImageThumbnail": "app3.png",
         "Image": "app3.png",
-        "Id":"3"
+        "Id":"3",
+        "Faq":[
+            {"question":"What does this do?",
+                "answer":"The app allows a timer to be set one handed, and alerted via a vibration"},
+            {"question":"How can it be customised?",
+                "answer":"All our apps are built on a solid appreciation that not everyones companies are the same. That is why all our apps are easily skinned to include company branding and colours. With these current apps, a specific four colour pallette has been used. This allows a quick turnaround of the application, and a parallel process of design and functionality to be implemented, meaning that apps are made twice as quickly."}
+        ]
     }
    ],
    "Site":{

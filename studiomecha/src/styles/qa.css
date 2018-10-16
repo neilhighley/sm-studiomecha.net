@@ -1,0 +1,29 @@
+.faqheader{
+    font-size:2em;
+    font-weight:600;
+}
+
+.qalist{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    line-height: 1em;
+
+}
+.qalist li{
+    line-height:1em;
+    margin:0px;
+    padding:0px;
+}
+.qalist .question{
+    font-size:1.3em;
+    color:#C1C1C1;
+    margin:0px;
+    padding:0px;
+}
+.qalist .answer{
+    color:#B6C648;
+    margin:0px;
+    padding:10px;
+    padding-top:5px;
+}

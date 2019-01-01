@@ -46,6 +46,22 @@
             {"question":"How can it be customised?",
                 "answer":"All our apps are built on a solid appreciation that not everyones companies are the same. That is why all our apps are easily skinned to include company branding and colours. With these current apps, a specific four colour pallette has been used. This allows a quick turnaround of the application, and a parallel process of design and functionality to be implemented, meaning that apps are made twice as quickly."}
         ]
+    },
+    {
+        "Reference": "AppFour",
+        "Name": "TurfCalc",
+        "Description": "The Simple, one handed Turf Area calculator",
+        "WorkDescription": "Calculates an area and suggests how many rolls of turf are required. Multiple formats supported",
+        "TimeEstimate": "Approximate time to deliver",
+        "ImageThumbnail": "app4.png",
+        "Image": "app4.png",
+        "Id":"4",
+        "Faq":[
+            {"question":"What does this do?",
+                "answer":"The app calculates the area of a space and suggests how many Rolls of Turf are required. Values can be added in Metric or Imperial terms"},
+            {"question":"How can it be customised?",
+                "answer":"All our apps are built on a solid appreciation that not everyones companies are the same. That is why all our apps are easily skinned to include company branding and colours. With these current apps, a specific four colour pallette has been used. This allows a quick turnaround of the application, and a parallel process of design and functionality to be implemented, meaning that apps are made twice as quickly."}
+        ]
     }
    ],
    "Site":{

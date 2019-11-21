@@ -12,6 +12,12 @@ class AppItem extends Component{
     getImage(img){
         return './'+img;
     }
+    getLink(){
+        console.log(this.state.item);
+        if(this.state.item.Link!==undefined){
+             return <a target={this.state.item.Name} title={this.state.item.Name} href={this.state.item.Link}>View this app</a>
+        }
+    }
     render(){
         return(
             <div className='app-view'>
@@ -20,6 +26,7 @@ class AppItem extends Component{
                 <p className='description'>{this.state.item.Description}</p>
                 <p className='workDescription'>{this.state.item.WorkDescription}</p>
                 <p className='timeEstimate'>{this.state.item.TimeEstimate}</p>
+                 {this.getLink()}
                 <p><AppPrivacyPolicy AppName={this.state.item.Name}/></p>
                 <p><AppFAQ qa={this.state.item.Faq}/></p>
             </div>

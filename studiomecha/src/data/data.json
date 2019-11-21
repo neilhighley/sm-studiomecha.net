@@ -62,6 +62,23 @@
             {"question":"How can it be customised?",
                 "answer":"All our apps are built on a solid appreciation that not everyones companies are the same. That is why all our apps are easily skinned to include company branding and colours. With these current apps, a specific four colour pallette has been used. This allows a quick turnaround of the application, and a parallel process of design and functionality to be implemented, meaning that apps are made twice as quickly."}
         ]
+    },
+    {
+        "Reference": "AppSix",
+        "Name": "DroneWars",
+        "Description": "DroneWars, created using Phaser3 and capacitor for mobile",
+        "WorkDescription": "Shoot the drones!",
+        "Link":"../games/drone-wars",
+        "TimeEstimate": "5 weeks",
+        "ImageThumbnail": "dw-screen.png",
+        "Image": "dw-screen.png",
+        "Id":"6",
+        "Faq":[
+            {"question":"How was this made?",
+                "answer":"Created over a few months on my morning commute, this is an old fashioned side scrolling target game"},
+            {"question":"How can it be customised?",
+                "answer":"All the assets are stored independentally of the program, so this can be bundled into any style"}
+        ]
     }
    ],
    "Site":{

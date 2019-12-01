@@ -37,6 +37,7 @@
         "Description": "The Simple, one handed timer",
         "WorkDescription": "Allows a countdown to be created with one hand, that silently vibrates when done",
         "TimeEstimate": "Approximate time to deliver",
+        "Link":"https://play.google.com/store/search?q=studiomecha",
         "ImageThumbnail": "app3.png",
         "Image": "app3.png",
         "Id":"3",
@@ -53,6 +54,7 @@
         "Description": "The Simple, one handed Turf Area calculator",
         "WorkDescription": "Calculates an area and suggests how many rolls of turf are required. Multiple formats supported",
         "TimeEstimate": "Approximate time to deliver",
+        "Link":"https://play.google.com/store/search?q=studiomecha",
         "ImageThumbnail": "app4.png",
         "Image": "app4.png",
         "Id":"4",
@@ -76,6 +78,24 @@
         "Faq":[
             {"question":"How was this made?",
                 "answer":"Created over a few months on my morning commute, this is an old fashioned side scrolling target game"},
+            {"question":"How can it be customised?",
+                "answer":"All the assets are stored independentally of the program, so this can be bundled into any style"}
+        ]
+    }
+    ,
+    {
+        "Reference": "AppEight",
+        "Name": "Political Animal 2019",
+        "Description": "Political Animal - Created using React, D3 and .net core",
+        "WorkDescription": "Watch the latest political news",
+        "Link":"https://play.google.com/store/search?q=studiomecha",
+        "TimeEstimate": "3 weeks",
+        "ImageThumbnail": "pa-screen.png",
+        "Image": "pa-screen.png",
+        "Id":"8",
+        "Faq":[
+            {"question":"How was this made?",
+                "answer":"Created using typescript and react"},
             {"question":"How can it be customised?",
                 "answer":"All the assets are stored independentally of the program, so this can be bundled into any style"}
         ]

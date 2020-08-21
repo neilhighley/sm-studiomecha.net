@@ -100,6 +100,24 @@
                 "answer":"All the assets are stored independentally of the program, so this can be bundled into any style"}
         ]
     }
+     ,
+    {
+        "Reference": "AppNine",
+        "Name": "Cam Cam Cam",
+        "Description": "Camera tool for taking notes with your camera, or using it as a makeshift magnifying tool ",
+        "WorkDescription": "Take notes and use a magnifying glass",
+        "Link":"",
+        "TimeEstimate": "3 weeks",
+        "ImageThumbnail": "cam-screen.png",
+        "Image": "cam-screen.png",
+        "Id":"9",
+        "Faq":[
+            {"question":"How was this made?",
+                "answer":"Created using Huawei App Kit"},
+            {"question":"How can it be customised?",
+                "answer":"All the assets are stored independentally of the program, so this can be bundled into any style"}
+        ]
+    }
    ],
    "Site":{
     "PHONE":"0784 324 7878"

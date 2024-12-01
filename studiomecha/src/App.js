@@ -16,6 +16,7 @@ import AppResolver from './libs/AppResolver'
 import './styles/backgrounds.css'
 import SiteData from './libs/SiteData'
 import VRViewer from './VRViewer'
+import ArtificialIntelligence from './ArtificialIntelligence'
 class App extends Component{
   
   render(){
@@ -41,6 +42,7 @@ class App extends Component{
                     <Route path='/augmented' component={Augmented} />
                     <Route exact path='/virtual' component={Virtual}/>   
                     <Route path='/virtual/aframe/:id' render={(props)=><VRViewer {...props} apps={allApps}/>}/>   
+                    <Route path='/ai'  component={ArtificialIntelligence}/>   
                                      
                 </Switch>
                 </div>

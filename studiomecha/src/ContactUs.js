@@ -3,6 +3,7 @@ import './styles/ContactUs.css'
 
 const SelectArea=(ch)=>{
     let areas=["Please Select...",
+    "We would like consultancy on AI in my business",
     "We might need a Mobile Application",
     "I am interested in Augmented Reality",
     "Tell me more about Small Apps",

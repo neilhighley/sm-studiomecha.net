@@ -1,0 +1,18 @@
+.aiPanel{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aiPanel .panelImage{
+    flex:1;
+
+}
+.aiPanel .panelImage img{
+    height:600px;
+}
+.aiPanel .panelContent{
+    flex:1;
+    margin:10px;
+}

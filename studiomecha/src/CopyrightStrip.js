@@ -45,7 +45,7 @@ class CopyrightStrip extends Component{
 }
 
 CopyrightStrip.defaultProps={
-    StripText:" STUDIOMECHA 2020",
+    StripText:" STUDIOMECHA 2025",
     Color:"#C1C1C1",
     Symbol:1
 }

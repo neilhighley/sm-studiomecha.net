@@ -13,6 +13,9 @@
     padding:5px;
 }
 
+.carousel .carouselItem img{
+    width:50%;
+}
 
 .appsDescription{
     background-color:black;

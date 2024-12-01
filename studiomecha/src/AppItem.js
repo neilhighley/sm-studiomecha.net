@@ -21,7 +21,7 @@ class AppItem extends Component{
     render(){
         return(
             <div className='app-view'>
-                <img src={'/images/' + this.state.item.Image} height="80%" alt={this.state.item.Description}/>
+                <img src={'/images/' + this.state.item.Image} height="400" alt={this.state.item.Description}/>
                 <h1 className='title'>{this.state.item.Name}</h1>
                 <p className='description'>{this.state.item.Description}</p>
                 <p className='workDescription'>{this.state.item.WorkDescription}</p>

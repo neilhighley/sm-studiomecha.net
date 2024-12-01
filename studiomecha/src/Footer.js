@@ -32,12 +32,12 @@ class Footer extends Component{
                         <ul className="footerPanels">
                             <li style={{backgroundColor:'rgba(100,100,10,0.4)'}}><Link to='home'>Home</Link></li>
                             <li><Link to="/contactus">Contact</Link></li>
-                            <li><Link to='/apps'>Apps</Link></li>
+                            <li><Link to='/apps'>Apps</Link></li>                            
+                            <li><Link to='/ai'>AI / ChatGPT / LLM</Link></li>
                             <li><Link to='/augmented'>AR (Aug-Reality)</Link></li>
                             <li><Link to='/virtual'>VR (Vir-Reality)</Link></li>
                         </ul>
                         <div className="creditStrip">
-                          
                              <CreditStrip Credits={CreditsToShow()} Color="#818181" BgColor="#211"/>
                         </div>
                     </div>

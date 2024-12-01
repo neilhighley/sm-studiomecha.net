@@ -70,7 +70,7 @@ class CreditStrip extends Component{
 }
 
 CreditStrip.defaultProps={
-    StripText:" CREDIT STUDIOMECHA 2018",
+    StripText:" CREDIT STUDIOMECHA 2025",
     StripURL:"http://www.studiomecha.net",
     Color:"#C1C1C1",
     Symbol:1,

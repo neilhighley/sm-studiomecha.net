@@ -7,7 +7,7 @@ class Main2 extends Component {
       <div className="SMApp">
         <header className="SMAppheader">
           <h1>Studio::Mecha</h1>
-          <h2>Manageable Applications for small businesses</h2>
+          <h2>Manageable Applications and advice for small businesses</h2>
         </header>
         
       </div>
